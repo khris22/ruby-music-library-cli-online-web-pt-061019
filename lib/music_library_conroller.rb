@@ -22,6 +22,20 @@ class MusicLibraryController
     input = gets.strip
     # input = 4.times???
     # input = gets(user_input).chomp
+
+      if input == "list songs"
+        list_songs
+      elsif input == "list artists"
+        list_artists
+      elsif input == "list genres"
+        list_genres
+      elsif input == "list_artist"
+        list_songs_by_artist
+      elsif input ==  "list genre"
+        list_songs_by_genre
+      elsif input == "play song"
+        play_song
+      end
     end
   end
 
